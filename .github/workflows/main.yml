@@ -14,5 +14,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Verify JAR exists
-        run: pwd
+        run: ls
 
