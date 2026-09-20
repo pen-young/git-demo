@@ -13,7 +13,5 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Build
-        run: mvn clean package
       - name: Run
         run: java -jar target/rocom-1.0-SNAPSHOT.jar
