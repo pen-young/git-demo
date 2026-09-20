@@ -2,7 +2,7 @@ name: My Scheduled Job
 
 on:
   schedule:
-    - cron: '05 8,12,16,20 * * *'
+    - cron: '05 0,4,8,12 * * *'
   workflow_dispatch:  # 允许你手动点击按钮测试[citation:12][citation:15]
 
 jobs:
