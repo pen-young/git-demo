@@ -1,0 +1,19 @@
+name: My Scheduled Job
+
+on:
+  schedule:
+    - cron: '05 8,12,16,20 * * *'
+  workflow_dispatch:  # 允许你手动点击按钮测试[citation:12][citation:15]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Build
+        run: mvn clean package
+      - name: Run
+        run: java -jar target/rocom-1.0-SNAPSHOT.jar
