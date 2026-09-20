@@ -14,5 +14,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Verify JAR exists
-        run: ls
-
+        run: ls rocom
+      - name: Run
+        run: java -jar rocom/target/rocom-1.0-SNAPSHOT.jar
