@@ -31,4 +31,5 @@ public class TravelGoodsReminderTask {
         params.set("group", "961180447");
         HttpUtil.post("https://qmsg.zendee.cn/v3/jsend/00843e0e519e878fc7d38a7be834638c63643efb", params.toString());
     }
+    
 }
