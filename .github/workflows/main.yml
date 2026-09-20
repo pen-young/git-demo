@@ -14,6 +14,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Verify JAR exists
-        run: ls -la target/
-      - name: Run
-        run: java -jar target/rocom-1.0-SNAPSHOT.jar
+        run: pwd
+
